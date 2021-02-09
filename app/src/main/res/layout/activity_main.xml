@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Klik Aku"
+        android:id="@+id/btnGPSShowLocation"
+        android:layout_marginTop="53dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Address"
+        android:visibility="gone"
+        android:id="@+id/btnShowAddress"
+        android:layout_below="@+id/btnGPSShowLocation" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAddress"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="134dp" />
+
+</RelativeLayout>
